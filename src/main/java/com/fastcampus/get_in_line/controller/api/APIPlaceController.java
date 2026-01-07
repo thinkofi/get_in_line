@@ -4,8 +4,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("/api")
-@RestController
+//@RequestMapping("/api")
+//@RestController
 public class APIPlaceController {
     ///api/places	GET
     @GetMapping("/places")
@@ -32,7 +32,7 @@ public class APIPlaceController {
     }
 
     ///api/places/{place-id}	DELETE
-    @DeleteMapping("/places/placeId")
+    @DeleteMapping("/places/{placeId}")
     public Boolean deletePlace(@PathVariable Integer placeId) {
         return true;
     }
